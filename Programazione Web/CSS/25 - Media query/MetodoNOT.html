@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Media Query </title>
+
+    <style>
+
+        body{
+            background-color: rgb(224, 224, 224);
+        }
+
+        p{
+            background-color: white;
+            padding: 20px;
+            width: auto;
+        }
+
+        @media not (max-width: 500px) (orientation: landscape){
+            body{
+                background-color: blue;
+            }
+        }
+
+        /* @media not screen{
+            body{
+                color: blue;  CTRL + P
+            }
+        } */
+
+        /* @media (hover: hover){
+            body{
+                background-color: red;
+            }
+        } */
+
+    </style>
+
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Etiam lobortis nisl vel nulla malesuada, in auctor elit dictum. 
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        Pellentesque arcu ex, pulvinar et tempor dignissim, rhoncus quis libero. 
+        Quisque eget nunc in libero dapibus congue. 
+        Pellentesque erat quam, aliquam sit amet blandit sed, rhoncus eget elit. 
+        Sed vitae velit massa. </p>
+</body>
+</html>

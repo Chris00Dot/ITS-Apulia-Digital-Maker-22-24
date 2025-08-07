@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Immagini, media e form </title>
+
+    <style>
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: solid 5px salmon;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .cover{
+            object-fit: cover;
+        }
+
+        .contain{
+            object-fit: contain;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box"><img src="mongolfiera.jpg" alt="mongolfiera"></div>
+        <div class="box"><img src="mongolfiera.jpg" alt="mongolfiera" class="cover"></div>
+        <div class="box"><img src="mongolfiera.jpg" alt="mongolfiera" class="contain"></div>
+    </div>
+</body>
+</html>

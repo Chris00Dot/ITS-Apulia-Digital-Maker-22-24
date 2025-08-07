@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Allineamento Flexbox </title>
+
+    <style>
+
+        section{
+            display: flex;
+            flex-flow: row wrap;
+            height: 500px;
+            border: solid 1px black;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: coral;
+            margin: 10px;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+        }
+
+        .box4{
+            order: 1;
+        }
+
+        .box1{
+            order: 2;
+        }
+
+        .box2{
+            order: 4;
+        }
+
+        .box3{
+            order: 3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <div class="box1"> 1 </div>
+        <div class="box2"> 2 </div>
+        <div class="box3"> 3 </div>
+        <div class="box4"> 4 </div>
+    </section>
+
+</body>
+</html>

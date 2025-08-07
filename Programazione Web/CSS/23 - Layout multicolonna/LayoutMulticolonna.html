@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Multiple-Column Layout </title>
+
+    <style>
+
+        body{
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .container{
+            column-count: 3;
+            column-gap: 20px;
+            /* column-rule: 5px solid black; */
+        }
+
+        .ads{
+            background: lightseagreen;
+            color: white;
+            column-span: all;
+            margin: 20px 0;
+            height: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1> Simple multicol example </h1>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        In eget elit nisi. 
+        Fusce et ultrices dui. 
+        Sed diam turpis, hendrerit tincidunt vulputate a, consequat eget erat. 
+        Integer porta nunc quis nisl consequat rhoncus. 
+        Praesent id volutpat nisl. 
+        Cras posuere dapibus ante at fringilla. 
+        Pellentesque placerat vehicula libero, non faucibus dui fermentum ut. 
+        Duis faucibus varius arcu, in euismod elit rhoncus non. 
+        Duis eleifend vitae mi eu cursus. 
+        Fusce rutrum et turpis in convallis. 
+        Sed eleifend suscipit massa, ut aliquet massa fringilla in. 
+        Morbi id rutrum tellus. 
+        Maecenas orci purus, pellentesque nec laoreet vitae, porttitor sit amet turpis. 
+        Vivamus ac ante ex. </p>
+
+    <div class="ads"> Sono una pubblicità </div>
+
+    <p> Ut ultricies lectus ante, venenatis imperdiet orci placerat accumsan. 
+        Nunc eleifend porta neque, lobortis tincidunt est mollis a. 
+        Vestibulum fringilla nisl ipsum, vitae pellentesque lorem efficitur at. 
+        Nulla commodo leo non faucibus bibendum. 
+        Curabitur quis dictum odio, et imperdiet ipsum. 
+        Donec ac pulvinar ligula. 
+        Duis et augue at sem gravida eleifend. 
+        Nunc maximus sit amet dolor id sollicitudin. 
+        Phasellus lobortis, mi nec porttitor tempor, urna ipsum ullamcorper urna, non semper sapien eros nec massa. 
+        Vivamus ac lacus neque. </p>
+    </div>
+
+</body>
+</html>

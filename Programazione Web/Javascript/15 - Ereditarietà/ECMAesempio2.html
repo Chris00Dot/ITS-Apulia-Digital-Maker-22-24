@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Erediatrietà </title>
+</head>
+<body>
+    
+    <script>
+
+        class Persona
+        {
+            constructor(nome, cognome, eta, genere, interessi)
+            {
+                this.nome = nome;
+                this.cognome = cognome;
+                this.eta = eta;
+                this.genere = genere;
+                this.interessi = interessi;
+            }
+
+            saluta()
+            {
+                console.log(`Ciao sono ${this.nome}`);
+            };
+        }
+
+        class Insegnante extends Persona
+        {
+            constructor(nome, cognome, eta, genere, interessi, materia)
+            {
+                super(nome, cognome, eta, genere, interessi);
+                this.materia = materia;
+            }
+
+            riprendiAlunno(nomeAlunno)
+            {   
+                //Alt 96 per il backtick
+                console.log(`${nomeAlunno} non si mangia in classe!`);
+            }
+        }
+
+        const insegnante = new Insegnante('Anna', 'Blu', 32, 'Femmina', ['Netflix'], 'Storia');
+        console.log(insegnante.materia);
+        insegnante.materia = 'Matematica';
+        console.log(insegnante.materia);
+        //Senza get e set non abbiamo nessun risultato
+
+
+       

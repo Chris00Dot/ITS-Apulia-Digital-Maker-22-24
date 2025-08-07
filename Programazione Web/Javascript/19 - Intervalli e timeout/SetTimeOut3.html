@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SetTimeOut </title>
+</head>
+<body>
+    <button> Clean </button>
+    <p id="demo"></p>
+
+    <script>
+        // Il SettimeOut è una funzione asincrona per la pulizia del timeout
+        //Premendo il bottone clean annullo il messaggio di timeout
+        let prova = setTimeout(saluta, 5000);
+        const btn = document.querySelector('button');
+
+        function saluta()
+        {
+            alert('Ciao sono in timeout');
+        }
+
+        //Arrow function ()=>
+        btn.addEventListener('click', ()=>
+        {
+            clearTimeout(prova);
+        })
+    </script>
+</body>
+</html>

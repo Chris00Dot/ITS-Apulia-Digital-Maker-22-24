@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+</head>
+<body>
+    <h1>Inserimento studente</h1>
+    <form method="post" action="/06 - Collegamento tra servlet e pagina HTML con la classe Filter e Listener/inserimento">
+    	
+      <input type="text" name="tipo" value="studente" style=display:none>	
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome"><br>
+
+      <label for="cognome">Cognome:</label><br>
+      <input type="text" id="cognome" name="cognome"><br>
+
+      <label for="eta">Età:</label><br>
+      <input type="number" id="eta" name="eta"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      
+      <label for="citta">In che città deve essere aggiunto?</label><br>
+      	<select name="citta" id="citta">
+    		<option value="molfetta">Molfetta</option>
+    		<option value="foggia">Foggia</option>
+    		<option value="bari">Bari</option>
+   			<option value="taranto">Taranto</option>
+   			<option value="lecce">Lecce</option>
+  		</select><br><br>
+
+      <input type="submit" value="Inserisci">
+    </form>
+</body>
+</html>

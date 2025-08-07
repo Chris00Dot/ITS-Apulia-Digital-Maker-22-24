@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Manipolare i Documenti HTML </title>
+
+    <style>
+        div.prova{
+            margin: 10px;
+            padding: 30px;
+            background-color: rgb(226, 226, 226);
+        }
+
+        .modificaStili{
+            color: red;
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button id="bottone" class="prova"> Bottone </button>
+    <div class="prova"></div>
+    <span class="prova"></span>
+
+    <script>
+
+        //Prendere elementi
+        let x = document.getElementById('bottone');
+
+        let y = document.querySelector('button');
+        let z = document.querySelector('#bottone');
+        let k = document.querySelector('.prova');
+
+        let w = document.querySelectorAll('.prova');
+        // console.log("w: ", w[0]);
+
+        let j = document.getElementsByClassName('prova');
+        // console.log("j: ", j[2]);
+
+
+        //Creare nuovi nodi
+        const div = document.querySelector('div');
+        const paragrafo = document.createElement('p');
+        paragrafo.textContext = 'Elemento creato dinamicamente.';
+        div.appendChild(paragrafo);
+
+        const extraTesto = document.createTextNode('Altra parte di testo come node');
+        paragrafo.appendChild(extraTesto);
+
+
+        //Spostare e rimuovere i nodi
+        // document.body.appendChild(paragrafo);
+        // paragrafo.removeChild(extraTesto);
+        // extraTesto.remove();
+
+
+        //Manipolare stili
+        // paragrafo.style.color = 'red';
+        // paragrafo.style.backgroundColor = 'black';
+        // paragrafo.style.padding = '10px';
+        // paragrafo.style.textAlign = 'center';
+
+        //Aggiungere attributi
+        paragrafo.setAttribute('class', 'modificaStili');
+        paragrafo.setAttribute('data-value', 'ciao');
+        console.log(paragrafo.getAttribute('data-value'));
+    </script>
+</body>
+</html>

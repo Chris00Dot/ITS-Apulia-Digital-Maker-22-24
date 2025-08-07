@@ -1,0 +1,2 @@
+De Sciglio;Mattia;Difensore;50
+Locatelli;Manuel;Centrocampista;60

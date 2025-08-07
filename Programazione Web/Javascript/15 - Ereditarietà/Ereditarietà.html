@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Erediatrietà </title>
+</head>
+<body>
+    
+    <script>
+
+        function Persona(nome, cognome, eta, genere, interessi)
+        {
+            this.nome = nome;
+            this.cognome = cognome;
+            this.eta = eta;
+            this.genere = genere;
+            this.interessi = interessi;
+            this.saluta = function()
+            {
+                console.log(`Ciao sono ${this.nome}`);
+            };
+        };
+
+        function Insegnante(nome, cognome, eta, genere, interessi, materia)
+        {
+            Persona.call(this, nome, cognome, eta, genere, interessi);
+            this.materia = materia;
+            this.saluta = function()
+            {
+                console.log(`Buongiorno sono ${this.nome} ${this.cognome}`);
+            };
+        };
+
+        const insegnante = new Insegnante('Anna', 'Blu', 32, 'Femmina', ['Netflix'], 'Storia');
+        console.log(insegnante);
+        insegnante.saluta();
+
+
+    </script>
+</body>
+</html>

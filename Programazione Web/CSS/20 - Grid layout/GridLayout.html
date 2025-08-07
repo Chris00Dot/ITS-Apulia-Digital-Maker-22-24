@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Grid Layout </title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px;
+            gap: 10px;
+        }
+
+        .box{
+            background-color: lightsalmon;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box nav" style="grid-column: 1/4; padding: 20px;"> 1 </div>
+        <div class="box main" style="grid-column: 1/3; padding: 40px;">
+
+            <h1> My article </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi metus leo, venenatis vel condimentum eget, porttitor pellentesque quam. 
+                In sed ex quis lorem congue ullamcorper. 
+                Praesent eleifend arcu enim, sit amet fringilla diam imperdiet fringilla. 
+                Integer eget pulvinar ligula. 
+                Nulla convallis a nibh ornare auctor. 
+                Vivamus maximus dignissim fringilla. 
+                Suspendisse fermentum lectus nisl, at posuere elit mollis non. 
+                Phasellus non ipsum tempus, gravida erat eu, dictum tellus.
+                Suspendisse potenti. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sodales ligula nibh, a fringilla nulla tincidunt vel. 
+                Fusce ipsum purus, blandit at lacus luctus, aliquam accumsan urna. 
+                Praesent nisi lacus, tempor vitae bibendum et, faucibus sagittis ipsum. 
+                Maecenas vel turpis mauris. 
+                Curabitur pretium leo quis volutpat sagittis.
+                Integer in lacus vitae eros pulvinar sagittis. 
+                Cras non suscipit justo. 
+                Maecenas vestibulum varius purus quis congue. 
+                Mauris id ipsum suscipit, commodo lectus vel, ultrices eros. 
+                Integer dignissim enim id fringilla gravida. 
+                Aliquam ac pharetra purus. 
+                Suspendisse in semper lectus. 
+                Curabitur id erat ut dui convallis tincidunt. 
+                Duis posuere massa ut diam consequat ultrices. 
+                Integer gravida ultricies diam, a egestas massa condimentum sed. 
+                Fusce pretium leo sed risus tincidunt sollicitudin. 
+                Cras congue interdum ante, vel malesuada diam mattis vitae. 
+                Proin bibendum vehicula libero tristique mollis. 
+                Integer placerat ligula id mauris posuere interdum. 
+                Integer nec augue ipsum. 
+                In ac nulla sed dolor dictum cursus sit amet id nulla.
+                <p> </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi metus leo, venenatis vel condimentum eget, porttitor pellentesque quam. 
+                In sed ex quis lorem congue ullamcorper. 
+                Praesent eleifend arcu enim, sit amet fringilla diam imperdiet fringilla. 
+                Integer eget pulvinar ligula. 
+                Nulla convallis a nibh ornare auctor. 
+                Vivamus maximus dignissim fringilla. 
+                Suspendisse fermentum lectus nisl, at posuere elit mollis non. 
+                Phasellus non ipsum tempus, gravida erat eu, dictum tellus.
+                Suspendisse potenti. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sodales ligula nibh, a fringilla nulla tincidunt vel. 
+                Fusce ipsum purus, blandit at lacus luctus, aliquam accumsan urna. 
+                Praesent nisi lacus, tempor vitae bibendum et, faucibus sagittis ipsum. 
+                Maecenas vel turpis mauris. 
+                Curabitur pretium leo quis volutpat sagittis.
+                Integer in lacus vitae eros pulvinar sagittis. 
+                Cras non suscipit justo. 
+                Maecenas vestibulum varius purus quis congue. 
+                Mauris id ipsum suscipit, commodo lectus vel, ultrices eros. 
+                Integer dignissim enim id fringilla gravida. 
+                Aliquam ac pharetra purus. 
+                Suspendisse in semper lectus. 
+                Curabitur id erat ut dui convallis tincidunt. 
+                Duis posuere massa ut diam consequat ultrices. 
+                Integer gravida ultricies diam, a egestas massa condimentum sed. 
+                Fusce pretium leo sed risus tincidunt sollicitudin. 
+                Cras congue interdum ante, vel malesuada diam mattis vitae. 
+                Proin bibendum vehicula libero tristique mollis. 
+                Integer placerat ligula id mauris posuere interdum. 
+                Integer nec augue ipsum. 
+                In ac nulla sed dolor dictum cursus sit amet id nulla.
+                <p> </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi metus leo, venenatis vel condimentum eget, porttitor pellentesque quam. 
+                In sed ex quis lorem congue ullamcorper. 
+                Praesent eleifend arcu enim, sit amet fringilla diam imperdiet fringilla. 
+                Integer eget pulvinar ligula. 
+                Nulla convallis a nibh ornare auctor. 
+                Vivamus maximus dignissim fringilla. 
+                Suspendisse fermentum lectus nisl, at posuere elit mollis non. 
+                Phasellus non ipsum tempus, gravida erat eu, dictum tellus.
+                Suspendisse potenti. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sodales ligula nibh, a fringilla nulla tincidunt vel. 
+                Fusce ipsum purus, blandit at lacus luctus, aliquam accumsan urna. 
+                Praesent nisi lacus, tempor vitae bibendum et, faucibus sagittis ipsum. 
+                Maecenas vel turpis mauris. 
+                Curabitur pretium leo quis volutpat sagittis.
+                Integer in lacus vitae eros pulvinar sagittis. 
+                Cras non suscipit justo. 
+                Maecenas vestibulum varius purus quis congue. 
+                Mauris id ipsum suscipit, commodo lectus vel, ultrices eros. 
+                Integer dignissim enim id fringilla gravida. 
+                Aliquam ac pharetra purus. 
+                Suspendisse in semper lectus. 
+                Curabitur id erat ut dui convallis tincidunt. 
+                Duis posuere massa ut diam consequat ultrices. 
+                Integer gravida ultricies diam, a egestas massa condimentum sed. 
+                Fusce pretium leo sed risus tincidunt sollicitudin. 
+                Cras congue interdum ante, vel malesuada diam mattis vitae. 
+                Proin bibendum vehicula libero tristique mollis. 
+                Integer placerat ligula id mauris posuere interdum. 
+                Integer nec augue ipsum. 
+                In ac nulla sed dolor dictum cursus sit amet id nulla.
+                <p> </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi metus leo, venenatis vel condimentum eget, porttitor pellentesque quam. 
+                In sed ex quis lorem congue ullamcorper. 
+                Praesent eleifend arcu enim, sit amet fringilla diam imperdiet fringilla. 
+                Integer eget pulvinar ligula. 
+                Nulla convallis a nibh ornare auctor. 
+                Vivamus maximus dignissim fringilla. 
+                Suspendisse fermentum lectus nisl, at posuere elit mollis non. 
+                Phasellus non ipsum tempus, gravida erat eu, dictum tellus.
+                Suspendisse potenti. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sodales ligula nibh, a fringilla nulla tincidunt vel. 
+                Fusce ipsum purus, blandit at lacus luctus, aliquam accumsan urna. 
+                Praesent nisi lacus, tempor vitae bibendum et, faucibus sagittis ipsum. 
+                Maecenas vel turpis mauris. 
+                Curabitur pretium leo quis volutpat sagittis.
+                Integer in lacus vitae eros pulvinar sagittis. 
+                Cras non suscipit justo. 
+                Maecenas vestibulum varius purus quis congue. 
+                Mauris id ipsum suscipit, commodo lectus vel, ultrices eros. 
+                Integer dignissim enim id fringilla gravida. 
+                Aliquam ac pharetra purus. 
+                Suspendisse in semper lectus. 
+                Curabitur id erat ut dui convallis tincidunt. 
+                Duis posuere massa ut diam consequat ultrices. 
+                Integer gravida ultricies diam, a egestas massa condimentum sed. 
+                Fusce pretium leo sed risus tincidunt sollicitudin. 
+                Cras congue interdum ante, vel malesuada diam mattis vitae. 
+                Proin bibendum vehicula libero tristique mollis. 
+                Integer placerat ligula id mauris posuere interdum. 
+                Integer nec augue ipsum. 
+                In ac nulla sed dolor dictum cursus sit amet id nulla.
+                <p> </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi metus leo, venenatis vel condimentum eget, porttitor pellentesque quam. 
+                In sed ex quis lorem congue ullamcorper. 
+                Praesent eleifend arcu enim, sit amet fringilla diam imperdiet fringilla. 
+                Integer eget pulvinar ligula. 
+                Nulla convallis a nibh ornare auctor. 
+                Vivamus maximus dignissim fringilla. 
+                Suspendisse fermentum lectus nisl, at posuere elit mollis non. 
+                Phasellus non ipsum tempus, gravida erat eu, dictum tellus.
+                Suspendisse potenti. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sodales ligula nibh, a fringilla nulla tincidunt vel. 
+                Fusce ipsum purus, blandit at lacus luctus, aliquam accumsan urna. 
+                Praesent nisi lacus, tempor vitae bibendum et, faucibus sagittis ipsum. 
+                Maecenas vel turpis mauris. 
+                Curabitur pretium leo quis volutpat sagittis.
+                Integer in lacus vitae eros pulvinar sagittis. 
+                Cras non suscipit justo. 
+                Maecenas vestibulum varius purus quis congue. 
+                Mauris id ipsum suscipit, commodo lectus vel, ultrices eros. 
+                Integer dignissim enim id fringilla gravida. 
+                Aliquam ac pharetra purus. 
+                Suspendisse in semper lectus. 
+                Curabitur id erat ut dui convallis tincidunt. 
+                Duis posuere massa ut diam consequat ultrices. 
+                Integer gravida ultricies diam, a egestas massa condimentum sed. 
+                Fusce pretium leo sed risus tincidunt sollicitudin. 
+                Cras congue interdum ante, vel malesuada diam mattis vitae. 
+                Proin bibendum vehicula libero tristique mollis. 
+                Integer placerat ligula id mauris posuere interdum. 
+                Integer nec augue ipsum. 
+                In ac nulla sed dolor dictum cursus sit amet id nulla.
+                <p> </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi metus leo, venenatis vel condimentum eget, porttitor pellentesque quam. 
+                In sed ex quis lorem congue ullamcorper. 
+                Praesent eleifend arcu enim, sit amet fringilla diam imperdiet fringilla. 
+                Integer eget pulvinar ligula. 
+                Nulla convallis a nibh ornare auctor. 
+                Vivamus maximus dignissim fringilla. 
+                Suspendisse fermentum lectus nisl, at posuere elit mollis non. 
+                Phasellus non ipsum tempus, gravida erat eu, dictum tellus.
+                Suspendisse potenti. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sodales ligula nibh, a fringilla nulla tincidunt vel. 
+                Fusce ipsum purus, blandit at lacus luctus, aliquam accumsan urna. 
+                Praesent nisi lacus, tempor vitae bibendum et, faucibus sagittis ipsum. 
+                Maecenas vel turpis mauris. 
+                Curabitur pretium leo quis volutpat sagittis.
+                Integer in lacus vitae eros pulvinar sagittis. 
+                Cras non suscipit justo. 
+                Maecenas vestibulum varius purus quis congue. 
+                Mauris id ipsum suscipit, commodo lectus vel, ultrices eros. 
+                Integer dignissim enim id fringilla gravida. 
+                Aliquam ac pharetra purus. 
+                Suspendisse in semper lectus. 
+                Curabitur id erat ut dui convallis tincidunt. 
+                Duis posuere massa ut diam consequat ultrices. 
+                Integer gravida ultricies diam, a egestas massa condimentum sed. 
+                Fusce pretium leo sed risus tincidunt sollicitudin. 
+                Cras congue interdum ante, vel malesuada diam mattis vitae. 
+                Proin bibendum vehicula libero tristique mollis. 
+                Integer placerat ligula id mauris posuere interdum. 
+                Integer nec augue ipsum. 
+                In ac nulla sed dolor dictum cursus sit amet id nulla.
+                <p> </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi metus leo, venenatis vel condimentum eget, porttitor pellentesque quam. 
+                In sed ex quis lorem congue ullamcorper. 
+                Praesent eleifend arcu enim, sit amet fringilla diam imperdiet fringilla. 
+                Integer eget pulvinar ligula. 
+                Nulla convallis a nibh ornare auctor. 
+                Vivamus maximus dignissim fringilla. 
+                Suspendisse fermentum lectus nisl, at posuere elit mollis non. 
+                Phasellus non ipsum tempus, gravida erat eu, dictum tellus.
+                Suspendisse potenti. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sodales ligula nibh, a fringilla nulla tincidunt vel. 
+                Fusce ipsum purus, blandit at lacus luctus, aliquam accumsan urna. 
+                Praesent nisi lacus, tempor vitae bibendum et, faucibus sagittis ipsum. 
+                Maecenas vel turpis mauris. 
+                Curabitur pretium leo quis volutpat sagittis.
+                Integer in lacus vitae eros pulvinar sagittis. 
+                Cras non suscipit justo. 
+                Maecenas vestibulum varius purus quis congue. 
+                Mauris id ipsum suscipit, commodo lectus vel, ultrices eros. 
+                Integer dignissim enim id fringilla gravida. 
+                Aliquam ac pharetra purus. 
+                Suspendisse in semper lectus. 
+                Curabitur id erat ut dui convallis tincidunt. 
+                Duis posuere massa ut diam consequat ultrices. 
+                Integer gravida ultricies diam, a egestas massa condimentum sed. 
+                Fusce pretium leo sed risus tincidunt sollicitudin. 
+                Cras congue interdum ante, vel malesuada diam mattis vitae. 
+                Proin bibendum vehicula libero tristique mollis. 
+                Integer placerat ligula id mauris posuere interdum. 
+                Integer nec augue ipsum. 
+                In ac nulla sed dolor dictum cursus sit amet id nulla.
+            </p>
+        </div>
+
+        <div class="box side" style="padding: 40px;">
+            <h1> Sidebar </h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi metus leo, venenatis vel condimentum eget, porttitor pellentesque quam. 
+                In sed ex quis lorem congue ullamcorper. 
+                Praesent eleifend arcu enim, sit amet fringilla diam imperdiet fringilla. 
+                Integer eget pulvinar ligula. </p>
+        </div>
+
+        <div class="box footer" style="grid-column: 1/4; padding: 20px;"> Contatti: querty@gmail.com </div>
+    </div>
+
+</body>
+</html>

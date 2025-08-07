@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> I form in HTML </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        fieldset {
+            width: 400px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        fieldset label {
+            margin-top: 10px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1> Esempio Form </h1>
+    <form action="salva_dati.php" method="POST">
+        <fieldset>
+            <legend> Dati Anagrafici </legend>
+
+            <label for="nome"> Nome </label>
+            <input type="text" name="nome" value="Marco" required>
+
+            <label for="cognome"> Cognome </label>
+            <input type="text" name="cognome" disabled>
+
+            <label for="codicefiscale"> Codice Fiscale </label>
+            <input type="text" name="codicefiscale" maxlength="16" placeholder="inserire codice fiscale" required>
+
+            <label for="provinciadinascita"> Provincia di Nascita </label>
+            <select name="provincianascita">
+                <option value=""> Selezione </option>
+                <option value="mi"> MI </option>
+                <option value="rm"> RM </option>
+                <option value="pa"> PA </option>
+            </select>
+
+            <label for="email"> Email </label>
+            <input type="email" placeholder="inserisci una email valida">
+            </fieldset>
+
+            <fieldset>
+                <legend> Dati Secondari </legend>
+                <span> Interessi </span>
+                <div>
+                    <input type="checkbox" id="basket" name="basket" value="Basket" checked>
+                    <label for="basket"> Basket </label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" id="calcio" name="calcio" value="Calcio">
+                    <label for="calcio"> Calcio </label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" id="tennis" name="tennis" value="Tennis">
+                    <label for="tennis"> Tennis </label> 
+                </div>
+
+                <label for="colorepreferito"> Colore Preferito </label>
+                <input type="color" name="colorepreferito">
+                <label for="fileaggiuntivi"> File Aggiuntivi </label>
+                <input type="file" multiple>
+
+                <span style="margin-top: 10px;"> Genere </span>
+                <div>
+                    <input type="radio" name="genere" value="m"> Maschio
+                    <input type="radio" name="genere" value="f"> Femmina
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Invia"> 
+            <input type="reset" value="Resetta"> 
+    </form>
+    
+</body>
+</html>
