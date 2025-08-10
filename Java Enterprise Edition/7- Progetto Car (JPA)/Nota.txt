@@ -1,0 +1,18 @@
+Creare un DB (esempio: current_car) prima di creare le eventuali tabelle presenti nello script.
+
+
+Run Configurations -> Environment -> Inserisco le mie variabili d'ambiente
+
+logging.level.com.academy=debug
+
+spring.datasource.url=jdbc:mysql://localhost:3306/current_car
+spring.datasource.username=root
+spring.datasource.password=root
+
+
+Le librerie inserite negli starters sono:
+
+Spring Boot DebvTools, Lombok, Spring Data JPA, PostgreSQL Driver (oppure MySQL Driver) e Spring Web (Swagger)
+
+
+
