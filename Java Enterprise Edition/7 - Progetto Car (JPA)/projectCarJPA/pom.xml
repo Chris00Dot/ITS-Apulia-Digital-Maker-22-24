@@ -8,7 +8,7 @@
 		<version>3.4.8-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.betacom</groupId>
+	<groupId>com.academy</groupId>
 	<artifactId>8_projectCarJPA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>8_projectCarJPA</name>
